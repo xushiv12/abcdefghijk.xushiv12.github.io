@@ -1,0 +1,15 @@
+<link rel="shortcut icon" href="https://xushiv12.github.io/icon.png">
+<h1>🌶️辣条输入法1.0.0版本</h1>
+<input  id="x">
+<a href="javascript:A()" onclick="A()">搜字</a>
+<script>
+function A(){
+const a={"ni":["你","泥","拟"],"nih":["你好","你还","你和"],"nihao":["你好","你号","拟好"],"xu":["徐","xu","许"]};
+let b=document.getElementById("x").value.toLowerCase();
+if(a[b]){document.getElementById("y").innerHTML = a[b].map(w=>"<button onclick='B(\""+w+"\")'>"+w+"</button>").join(" ");}else{alert("这个是有小孩子开发的,字体还不全哟。");}
+}
+function B(w){document.getElementById("x").value=w;}
+</script>
+<br>
+<p id="y"></p>
+<title>🌶️辣条输入法</title>
